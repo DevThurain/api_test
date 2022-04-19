@@ -20,3 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/register', [App\Http\Controllers\Auth\RegisterController::class, 'apiCreate']);
 
+Route::get('/games', [App\Http\Controllers\GameController::class, 'allGames']);
+
