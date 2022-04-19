@@ -20,3 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/profile/{user}', [App\Http\Controllers\ProfileController::class, 'index'] );
+
+Route::get('/games',[App\Http\Controllers\GameController::class, 'index'] );
